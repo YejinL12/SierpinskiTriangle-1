@@ -1,9 +1,9 @@
 int r1 = (int)(Math.random()*255);
 int g1 = (int)(Math.random()*255);
 int b1 = (int)(Math.random()*255);
-int r2 = 0; 
-int g2 = 0;
-int b2 = 0;
+int r2 = (int)(Math.random()*255); 
+int g2 = (int)(Math.random()*255);
+int b2 = (int)(Math.random()*255);
 public void setup()
 {
 size(500,500);
@@ -18,21 +18,12 @@ sierpinski(0,450,500);
 }
 public void mousePressed()//optional
 {
- if(r2 == 0){
-r1 = 0;
-g1 = 0;
-b1 = 0;
+r1 = (int)(Math.random()*255);
+g1 = (int)(Math.random()*255);
+b1 = (int)(Math.random()*255);
 r2 = (int)(Math.random()*255); 
 g2 = (int)(Math.random()*255);
 b2 = (int)(Math.random()*255);
- } else{
-r2 = 0;
-g2 = 0;
-b2 = 0;
-r1 = (int)(Math.random()*255); 
-g1 = (int)(Math.random()*255);
-b1 = (int)(Math.random()*255);   
-}
 }
 public void sierpinski(int x, int y, int len) 
 {
